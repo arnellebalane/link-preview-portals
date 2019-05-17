@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+
+  "name": "Link Preview",
+  "version": "1.0.0",
+  "description": "Preview links on hover using Portals",
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["index.js"],
+      "css": ["index.css"]
+    }
+  ]
+}

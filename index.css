@@ -1,0 +1,23 @@
+#link-preview-portal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999999;
+    width: 100vw;
+    height: 100vh;
+
+    transform: translate(8px, -28px) scale(0.35);
+    transform-origin: bottom left;
+
+    border: 1px solid #b5b5b5;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow:
+        0 10px 20px rgba(0, 0, 0, 0.19),
+        0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+#link-preview-portal.activated {
+    transform: translate(0, 0) scale(1);
+    transition: transform 200ms ease-out;
+}
