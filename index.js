@@ -3,6 +3,10 @@ let timeout;
 document.addEventListener('mouseenter', e => {
     if (e.target.matches && e.target.matches('a[href]')) {
         const url = e.target.href;
+        if (url === location.href) {
+            return;
+        }
+
         let portal = document.querySelector('portal#link-preview-portal');
 
         if (portal) {
